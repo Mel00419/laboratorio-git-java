@@ -1,10 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
         System.out.println("====================================");
-        System.out.println(" LABORATORIO DE DESARROLLO SOFTWARE ");
+        System.out.println(" SISTEMA DE REGISTRO DE ESTUDIANTES ");
         System.out.println("====================================");
-        System.out.println("Mi primer proyecto utilizando Java y Git");
+        System.out.print("Ingrese su nombre: ");
+        String nombre = teclado.nextLine();
+        System.out.println("Bienvenido " + nombre);
     }
 }
