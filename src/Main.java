@@ -3,17 +3,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("====================================");
-        System.out.println(" SISTEMA DE REGISTRO DE ESTUDIANTES ");
-        System.out.println("====================================");
-        System.out.print("Ingrese su nombre: ");
-        String nombre = teclado.nextLine();
-        System.out.print("Ingrese su edad: ");
-        int edad = teclado.nextInt();
-        System.out.println();
-        System.out.println("DATOS DEL ESTUDIANTE");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
+        int opcion;
+        System.out.println("==============================");
+        System.out.println(" SISTEMA ACADÉMICO");
+        System.out.println("==============================");
+        System.out.println("1. Registrar estudiante");
+        System.out.println("2. Consultar estudiante");
+        System.out.println("3. Salir");
+        System.out.print("Seleccione una opción: ");
+        opcion = teclado.nextInt();
+        System.out.println("Opción seleccionada: " + opcion);
     }
 }
-
